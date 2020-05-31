@@ -6,15 +6,50 @@
     <title>Jh's Portfolio</title>
     <meta name="description" content="My Portfolio WebSite" />
     <meta name="author" content="Jihoon" />
+    <!-- 페이지 아이콘 설정 -->
     <link rel="icon" type="image/png" href="images/apple_spacegray.png" />
+    <!-- fontawsome 설정 -->
     <script
       src="https://kit.fontawesome.com/571aadaefb.js"
       crossorigin="anonymous"
     ></script>
+    <!-- 구글 폰트 설정 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <!-- defer를 쓰는 이유: html 파일이 파싱되는 동안 자바스크립트 파일을 동시에 다운로드 받아서 html파일이 파싱이 다 된 다음에 
+    자바스크립트 파일을 실행-->
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-apple-alt"></i>
+        <a href="#">Jh's Portfolio</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My Work</li>
+          <li class="navbar__menu__item">Testimonials</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- About -->
+    <section id="about"></section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
