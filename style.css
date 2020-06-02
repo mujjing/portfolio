@@ -171,7 +171,7 @@ p {
 }
 .major__icon:hover i {
   color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.1);
+  transform: rotate(-20deg) scale(1.1);
 }
 .major__title,
 .major__description {
