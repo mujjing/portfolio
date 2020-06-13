@@ -85,12 +85,20 @@ p {
 }
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
-  background-color: var(--color-navcolor);
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 14px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.nav--dark {
+  background: var(--color-navcolor);
+  padding: 8px;
 }
 .navbar__menu {
   display: flex;
@@ -128,6 +136,7 @@ p {
   background: url("images/New\ episodes\ every\ Wdnesday.png") center/cover
     no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 .home__avatar {
