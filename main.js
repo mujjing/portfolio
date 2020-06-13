@@ -21,8 +21,16 @@ navbarmenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
+  navbarmenu.classList.remove("open");
   scrollIntoViews(link);
+});
+
+//Navbar toggle button for small screen
+
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  console.log(navbarmenu.classList.toggle("open"));
+  navbarmenu.classList.toggle("open");
 });
 
 //Handle Scrolling when tapping contact me button
